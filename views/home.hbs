@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+  
+  <h1>Tabla periodica de los elementos</h1>
+  <div class="container-table">  
+    {{#each elements as |element|}}
+
+      <div class="columnas {{element.group}} {{element.position}}"> <span>{{element.symbol}}</span></div>     
+
+    {{/each}}
+  </div>
+  <br><br><br>
+  <div class="container-table">
+    <div class="leyendas Alcalinos"><span>Alcalinos</span></div>
+    <div class="leyendas Alcalinoterreos"><span>Alcalinoterreos</span></div>
+    <div class="leyendas Metales"><span>Metales</span></div>
+    <div class="leyendas Otros_metales"><span>Otros metales</span></div>
+    <div class="leyendas Metaloides"><span>Metaloides</span></div>
+    <div class="leyendas Otros_no_metales"><span>Otros no metales</span></div>
+    <div class="leyendas Halogenos"><span>Halogenos</span></div>
+    <div class="leyendas Gases"><span>Gases</span></div>
+    <div class="leyendas Lantanidos"><span>Lantanidos</span></div>
+    <div class="leyendas Actinidos"><span>Actinidos</span></div>
+  </div>
+  </body>
+</html>
